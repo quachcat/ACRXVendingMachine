@@ -1,7 +1,5 @@
-package vendingmachine.step3;
+package vendingmachine.step2;
 
-import vendingmachine.step3.TextVendingMachineInterface;
-import vendingmachine.step3.VendingMachineInterface;
 
 import java.util.Scanner;
 
@@ -10,7 +8,7 @@ public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        VendingMachineInterface machineInterface = new TextVendingMachineInterface();
+        VendingMachineInterface machineInterface = null; //TODO
 
         machineInterface.displayProducts();
 
@@ -20,7 +18,8 @@ public class Main {
         machineInterface.displayEnterCoinsMessage();
 
         String userEnteredCoins = scanner.nextLine();
-        int[] enteredCoins = Coin.parseCoins(userEnteredCoins);
+
+        int[] enteredCoins = {};
         machineInterface.enterCoins(enteredCoins);
 
         machineInterface.displayChangeMessage();

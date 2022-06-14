@@ -1,4 +1,4 @@
-package vendingmachine.step3;
+package vendingmachine.step2;
 
 public interface VendingMachineInterface {
 
