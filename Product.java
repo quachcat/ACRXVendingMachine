@@ -1,4 +1,4 @@
-package vendingmachine.step3;
+package vendingmachine.step2;
 
 public enum Product {
     TWIX(1,100), COKE(2,50), WATER(3,30), SANDWICH(4,150), EMPTY(0,0);
@@ -19,12 +19,4 @@ public enum Product {
         return this.price;
     }
 
-    public static Product valueOf(int numberSelection){
-        for(Product product: Product.values()){
-            if(numberSelection == product.getSelectionNumber()){
-                return product;
-            }
-        }
-        return EMPTY;
-    }
 }

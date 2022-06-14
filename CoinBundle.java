@@ -1,4 +1,4 @@
-package vendingmachine.step3;
+package vendingmachine.step2;
 
 public class CoinBundle {
     public int number5CentsCoins;
@@ -16,14 +16,4 @@ public class CoinBundle {
 
     }
 
-
-    public int getTotal(){
-        int total = 0;
-        total = total+this.number5CentsCoins*Coin.FIVE_CENTS.getValue();
-        total = total+this.number10CentsCoins*Coin.TEN_CENTS.getValue();
-        total = total+this.number20CentsCoins*Coin.TWENTY_CENTS.getValue();
-        total = total+this.number50CentsCoins*Coin.FIFTY_CENTS.getValue();
-        total = total+this.number100CentsCoins*Coin.HUNDRED_CENTS.getValue();
-        return total;
-    }
 }
